@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <meta http-equiv="refresh" content="3600">
+    <title>Home</title>
+    <link rel="stylesheet" href="./games.css">
+<style> 
+    
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 50.0);
+            grid-auto-rows: 37.5vw; /* 50vw * 3 / 4 = 37.5vw for a 4:3 aspect ratio */
+            padding: 0;
+            margin: 0;
+        }
+        .grid-item {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: transform 0.3s ease;
+            background-size: cover; 
+        }
+        .grid-item:hover {
+            transform: scale(1.1);
+              }
+            .grid-item:nth-child(1) {
+            background-image: url('/images/1694532058-630e6faf26f43448a14d7503+%281%29.jpeg');
+        }
+           .grid-item:nth-child(2) {
+            background-image: url('/images/gdw.png');
+        }
+           .grid-item:nth-child(3) {
+            background-image: url('/images/gdm.png');
+        }
+            .grid-item:nth-child(4) {
+            background-image: url('/images/gds0.png');
+        }
+            .grid-item:nth-child(5) {
+            background-image: url('/images/gd.png');
+        }
+            .grid-item:nth-child(6) {
+            background-image: url('/images/snael.png');
+        }
+            .grid-item:nth-child(7) {
+            background-image: url('/images/stik.png');
+        }
+            .grid-item:nth-child(8) {
+            background-image: url('/images/baskitball.png');
+        }
+            .grid-item:nth-child(9) {
+            background-image: url('/images/blocks.png');    
+        }
+            .grid-item:nth-child(10) {
+            background-image: url('/images/space.png');  
+        }
+            .grid-item:nth-child(11) {
+            background-image: url('/images/appal.png');
+        }      
+            .grid-item:nth-child(12) {
+            background-image: url('/images/zce.png');
+        }
+            .grid-item:nth-child(13) {
+            background-image: url('/images/lucky.png');
+        }     
+            .grid-item:nth-child(14) {
+            background-image: url('/images/pac-man.png');
+        }
+            .grid-item:nth-child(15) {
+            background-image: url('/images/lemin.png');
+        }      
+            .grid-item:nth-child(16) {
+            background-image: url('/images/eat.png');
+        }
+            .grid-item:nth-child(17) {
+            background-image: url('/images/balls.png');
+        }
+            .grid-item:nth-child(18) {
+            background-image: url('/images/mario.png');
+        }
+            .grid-item:nth-child(19) {
+            background-image: url('/images/slimer.png');
+        }        
+            .grid-item:nth-child(20) {
+            background-image: url('/images/screenshot06.png');
+        }
+            .grid-item:nth-child(21) {
+            background-image: url('/images/chess.png');
+        }      
+            .grid-item:nth-child(22) {
+            background-image: url('/images/thing.gif');
+        }
+            .grid-item:nth-child(23) {
+            background-image: url('/images/gt.png');
+        }
+            .grid-item:nth-child(24) {
+            background-image: url('/images/dg.png');
+        }      
+            .grid-item:nth-child(25) {
+            background-image: url('/images/mm.png');
+        }
+            .grid-item:nth-child(26) {
+            background-image: url('/images/htd.png');
+        }
+            .grid-item:nth-child(27) {
+            background-image: url('/images/fnaf.png');
+        }
+            .grid-item:nth-child(28) {
+            background-image: url('/images/stack.png');
+        }        
+            .grid-item:nth-child(29) {
+            background-image: url('/images/fai.png');
+        }
+            .grid-item:nth-child(30) {
+            background-image: url('/images/amldsfwih.png');
+        }      
+            .grid-item:nth-child(31) {
+            background-image: url('/images/driftchase.png');
+        }
+            .grid-item:nth-child(32) {
+            background-image: url('/images/smc.png');
+        }
+            .grid-item:nth-child(33) {
+            background-image: url('/images/getting_over_it.png');
+        }      
+            .grid-item:nth-child(34) {
+            background-image: url('/images/slope_3d.png');
+        }
+            .grid-item:nth-child(35) {
+            background-image: url('/images/flip.png');
+        }
+            .grid-item:nth-child(36) {
+            background-image: url('/images/blisticchiken.png');
+        }
+            .grid-item:nth-child(37) {
+            background-image: url('/images/copchase.png');
+        }      
+            .grid-item:nth-child(38) {
+            background-image: url('/images/dinocliker.png');
+        }
+            .grid-item:nth-child(39) {
+            background-image: url('/images/100cliker.png');
+        }
+            .grid-item:nth-child(40) {
+            background-image: url('/images/shift.png');
+        }      
+            .grid-item:nth-child(41) {
+            background-image: url('/images/bloock_breaker.png');
+        }
+            .grid-item:nth-child(42) {
+            background-image: url('/images/idalpong.png');
+        }
+            .grid-item:nth-child(43) {
+            background-image: url('/images/spin.png');
+        }
+            .grid-item:nth-child(44) {
+            background-image: url('/images/finger_drive.png');
+        }
+            .grid-item:nth-child(45) {
+            background-image: url('/images/plaformer.png');
+        }      
+            .grid-item:nth-child(46) {
+            background-image: url('/images/nathinsimulater3d.png');
+    }
+        /* Add more nth-child selectors for each grid item */
+        .grid-item a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: inherit;
+    }
+        .grid-item-big {
+            grid-column: span 2;
+        }
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #333;
+            color: black;
+        }
+
+        .navbar img {
+            float: left;
+            margin-left: 10px;
+            height: 80px;
+            width: auto;
+        }
+  .banner {
+    background-color: rgba(245, 226, 22, 0.8); /* Use rgba() for semi-transparent color */
+    color: #fff;
+    padding: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 32px; /* Increase font size as needed */
+  }
+</style>
+    <script>
+  window.onload = function() {
+    setTimeout(function() {
+      document.querySelector('.banner').style.display = 'none';
+    }, 7000);
+  };
+</script>
+  </head>
+  <body>
+      
+      <h1>
+          _erfgefg
+      </h1>      
+ 
+<div class="navbar">
+    <a href="#">
+        <img src="/icon.png" alt="Logo">
+    </a>
+    <a href="index.html"><h2>Home</h2></a>
+
+    <a href="songs.html"><h2>songs</h2></a>
+    <a href="https://forms.gle/BKHdFTsbwGXsqGBt6"><h2>bug report</h2></a>
+    <a href="/youtube/catube.html"><h2>Youtube</h2></a>     
+    <a href="https://forms.gle/uxwBi4RfN7s88EcM7"><h2>should i add ads</h2></a>  
+    <a href="#"><h2>tip save the home</h2></a>
+</div>
+
+    <main>
+<div class="banner">as the year comes to the end the website new content will be slowing down but there will be one more update soon
+</div>
+        
+        <div class="grid-container">
+<div class="grid-item grid-item-big">
+    <a href="/landbattle.html" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1>
+    </a>
+</div>
+<div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/662fb975d1744855e4d5fcc8/snapshot/20240429-151732-7cee7e3075a9c4659aa44ae2779a9b04/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: gray; z-index: 1;">Geometry Dash World</h1>
+    </a>
+</div>
+ <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/662fbaf5513317f7aba32075/snapshot/20240429-152507-e810a3d3fb31f5ce72d664c6ebb6e4ce/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: gray; z-index: 1;">Geometry Dash Meltdown</h1>
+    </a>
+</div>           
+<div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/662fbc5b3fa896d1ed55a868/snapshot/20240429-153416-f52d056f16b9b5578551830dbf6f11f8/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: gray; z-index: 1;">Geometry Dash Subzero</h1>
+    </a>
+</div>            
+<div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/662fbe813fa896d1ed55a89b/snapshot/20240429-153748-6d76867a36c295710c180d723c8d838b/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: gray; z-index: 1;">Geometry Dash</h1>
+    </a>
+</div>            
+<div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/662fbee6c6ba8dda77dfecb4/snapshot/20240429-153932-765f43cc451f7dc4545120a3d1da7988/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- Snail Platformer -->
+    </a>
+</div>            
+<div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/662fbf9dd1744855e4d5fcda/snapshot/20240429-154541-cc646f67ff81e6ba0beca6a4f58fad5a/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- Stickman Hook -->
+    </a>
+</div>
+<div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/662fbf4e3fa896d1ed55a8b2/snapshot/20240429-154735-a03935c1fcd5f07f63913986346a43a6/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1> <!-- Basketball -->
+    </a>
+</div>            
+ <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/662fc128c6ba8dda77dfecc3/snapshot/20240429-154955-c7fd22351b4242756f1a645cce4c1e91/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- Blocks -->
+    </a>
+</div>           
+<div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/658658039a92e45b1d47ecf0/snapshot/20231223-182956-c40110ee80070d8f9e3d21be58f95563/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">Atmospherical</h1>
+    </a>
+            </div>   
+            <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/6586586b9b8c257713162d18/snapshot/20231223-184432-d4a114c4689072362c95476f0e0ce98d/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1> <!-- appel -->
+    </a>
+            </div>   
+            
+              <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/658656739a92e45b1d47ecd8/snapshot/20231223-182251-865c304273913a7453e4485e4e1024fe/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: red; z-index: 1;"></h1><!-- Zombie Cube Escape -->
+    </a>
+                  
+            </div>             
+              <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/658656949a92e45b1d47ecdb/snapshot/20231223-182022-17e820b9da7a864a9bb218bbf0ff29c4/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- The Luckiest Scratcher -->
+    </a>
+                       
+    </div>
+
+              <div class="grid-item">
+    <a href="packman.html" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">pacman</h1>
+    </a>
+                       
+    </div>         
+                     <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/6586578a9a92e45b1d47ece6/snapshot/20231223-181456-9a51c0df60c6c8707a69666ed34cbc4c/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">Non-Euclidean Lemon Grab</h1>
+    </a>
+                       
+    </div>   
+            
+                   <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/658657a69a92e45b1d47ece9/snapshot/20240102-151909-27efd3b8ee436535c058f489950a5939/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">Level EATEN!</h1>
+    </a>
+                       
+    </div>          
+                   <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/658657659a92e45b1d47ece2/snapshot/20231223-180232-c473b70d28ee3337753a0b85aa69e8b1/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!--not quite ball physics  -->
+    </a>
+                       
+    </div>          
+                   <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/658656be9a92e45b1d47ecdd/snapshot/20231223-175902-75ae00c58ddd02ecaea75c5e6d4b4ff2/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!--super mario  -->
+    </a>
+                       
+    </div>          
+                   <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/658657659a92e45b1d47ece2/snapshot/20231223-180232-c473b70d28ee3337753a0b85aa69e8b1/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- Slimer -->
+    </a>
+                       
+    </div>          
+                   <div class="grid-item">
+    <a href="/mindsiper/index.html" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">minesweeper</h1>
+    </a>
+                       
+    </div>          
+            
+                      <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/655147bb9b8c25771315053b/snapshot/20231112-231743-1b835813c24517e4fc63015f2c197056/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">chess</h1>
+    </a>
+                       
+    </div>          
+                       <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/653446dc87df90b3331c542e/snapshot/20231025-003659-3b5b19ea1081d40f8844d6d55a32de88/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">Broks amazing maze remastered</h1>
+    </a>
+                       
+    </div>         
+                         <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/655147569b8c257713150536/snapshot/20231112-231445-79ff45f5b27fd19d1a29bf620eeafe77/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- ghost town -->
+    </a>
+                       
+    </div>       
+                      <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/6551478e9b8c257713150538/snapshot/20231112-231512-fa398778d1f54074fa63a9d6222c24d4/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- doodle games -->
+    </a>
+                       
+    </div>          
+                      <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/655146d39b8c257713150531/snapshot/20231112-230714-2f07807c44e278b28b91ec68b627ecb5/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- magic mines -->
+    </a>
+                       
+    </div> 
+                        <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/655147049b8c257713150533/snapshot/20231112-231128-ffd499a49a60f1ae8a1a197fbf707794/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- heavey tower defense -->
+    </a>
+                       
+    </div>        
+                       <div class="grid-item">
+    <a href="https://schools.oyosite.com/vjungy.html" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">FNAF</h1>
+    </a>
+                       
+    </div>         
+                         <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/655146b09b8c25771315052b/snapshot/20231112-230207-e69138546559bf1a3549db4c7d2942b3/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!--  stack game-->
+    </a>
+                       
+    </div>                   
+        
+                         <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/64eff3cb3bec91df5376f427/snapshot/20231018-142255-da58e498ce6cb03c118fcb6db91f293a/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- Fire & Ice -->
+    </a>
+                       
+    </div>        
+                           <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/64eff194202cbf01e3368b6e/snapshot/20231023-183428-f3c957964dbe99182d6871258e1fd13d/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- Dodge Mania -->
+    </a>
+                       
+    </div>         
+                         <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/646bdeca5533fe2013f78484/snapshot/20230522-213129-6a9ceb42fd7f39549f53b6372acfc414/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- Drift Chase -->
+    </a>
+                       
+    </div>        
+                           <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/64ac5dbb23adbc78f88ec0df/snapshot/20230710-193858-029e6a422714c066d07c67622853db9b/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- Super Mario Kart -->
+    </a>
+                       
+    </div>         
+                         <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/646fd031a19601d571c7228c/snapshot/20230525-212628-6252e3d2793e889e11ff038b596a7454/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- getting over it -->
+    </a>
+                       
+    </div>        
+                           <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/64ac586f750d7fbd053378b9/snapshot/20230712-125759-8df3c1409006b7bf7ec50daed02052bf/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- Slope 3D -->
+    </a>
+                       
+    </div>         
+                         <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/64793585a5bd25cd2017c6e1/snapshot/20230602-002023-8a26322d43622fbaaf60b850423e6a57/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">flip</h1>
+    </a>
+                       
+    </div>
+                               <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/647a8723cade32450d69e703/snapshot/20230603-002302-554d3381fa3a6f2cada4573a04e1e851/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- Ballistic Chickens -->
+    </a>
+                       
+    </div>         
+                         <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/6479319cbf6553df3fc0dbc6/snapshot/20230602-000350-954371127b831461be0eb3f8537ea5dd/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!--COP CHASE  -->
+    </a>
+                       
+    </div>        
+                               <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/64793290914a40b09002b58e/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- Chrome Dino Clicker -->
+    </a>
+                       
+    </div>         
+                         <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/6477a41fa5b0619f84622490/snapshot/20230531-194825-8d6b806d16a5c4fd0c1842b163dbbb91/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- 100%- A Clicker Game -->
+    </a>
+                       
+    </div>        
+                               <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/6477a6a85535703e6cb5a479/snapshot/20230531-195832-fef1014e7e51eb6ffbd3ed0fbfdc2a80/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- SHIFT -->
+    </a>
+                       
+    </div>         
+                         <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/646bd6555533fe2013f78453/snapshot/20230522-210642-8be2b6d4b618c96182c8681082f89294/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">Block Breaker</h1>
+    </a>
+                       
+    </div>        
+                               <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/6477a534914a40b09002b30b/snapshot/20230531-195521-ee44bee7818e60bba7c882175b2d7e96/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">Idle breakout</h1>
+    </a>
+                       
+    </div>         
+                         <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/646bda1a5533fe2013f7846a/snapshot/20230522-211518-adc137fef2c30c3f2a01207bf82fb604/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!--spin  -->
+    </a>
+                       
+    </div>        
+                               <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/646fd9586759ee598bbbf5b2/snapshot/20230525-220352-4f9b5accbbc1719f519ed3ce5deb4753/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- Finger driver -->
+    </a>
+                       
+    </div>         
+                         <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/645ec04927ee514a2f781b4e/snapshot/20230522-170205-d0bad6a49466aaf2456002707f301771/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;"></h1><!-- plaformer -->
+    </a>
+                       
+    </div>        
+                               <div class="grid-item">
+    <a href="https://hatch.app.oyoclass.com/project/632a1497d3f99cf30cadf01a/snapshot/20231031-142208-dfb3ef5a04cd44a4a8abe668dd07c01c/embed" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">Nathan Simulator 3D</h1>
+    </a>
+                       
+    </div>         
+  <!--                       <div class="grid-item">
+    <a href="" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">N/A</h1>
+    </a>
+                       
+    </div>        
+                               <div class="grid-item">
+    <a href="" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">N/A</h1>
+    </a>
+                       
+    </div>         
+                         <div class="grid-item">
+    <a href="" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">N/A</h1>
+    </a>
+                       
+    </div>        
+                               <div class="grid-item">
+    <a href="" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">N/A</h1>
+    </a>
+                       
+    </div>         
+                         <div class="grid-item">
+    <a href="" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">N/A</h1>
+    </a>
+                       
+    </div>        
+                               <div class="grid-item">
+    <a href="" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">N/A</h1>
+    </a>
+                       
+    </div>         
+                         <div class="grid-item">
+    <a href="" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">N/A</h1>
+    </a>
+                       
+    </div>        
+                               <div class="grid-item">
+    <a href="" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <h1 style="color: white; z-index: 1;">N/A</h1>
+    </a>
+                       
+    </div>         
+-->
+</div>
+
+
+    </main>
+  </body>
+</html
