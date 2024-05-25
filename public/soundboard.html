@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="3600">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+        .search-bar {
+            width: 300px;
+            /* Adjust width to make the search bar wider */
+            height: 40px;
+            /* Adjust height to make the search bar taller */
+            font-size: 18px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 20px 40px;
+            /* Adjust padding to increase button size */
+            margin: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            mix-blend-mode: invert;
+            background-color: #07b3d9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        ul.menu li {
+            float: left;
+            width: 20%;
+            /* Divide the menu equally into four sections */
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        ul.menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 0;
+            /* Adjust the vertical padding as needed */
+            text-decoration: none;
+            font-size: 18px;
+            /* Increase the font size */
+        }
+
+        ul.menu li a:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="songs.html">Songs</a></li>
+        <li><a href="man.html">Games</a></li>
+        <li><a href="/youtube/catube.html">YouTube</a></li>
+        <li><a href="/index.html">home</a></li>
+    </ul>
+    <main>
+
+        <center>
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfOZ4_GeixVx0RgIELoNIDwuhoLix_kx3Ysbh0AkK3v5AoHxw/viewform?embedded=true"
+                width="1300" height="451" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <div>
+                <input type="text" id="searchInput" class="search-bar" onkeyup="filterSounds()"
+                    placeholder="Search for sounds...">
+            </div>
+            <div id="soundButtons">
+                <button class="button" onclick="playSound('sound1')">Vine boom</button>
+                <button class="button" onclick="playSound('sound2')">Chinese Rap</button>
+                <button class="button" onclick="playSound('sound3')">Yo-phone-linging</button>
+                <button class="button" onclick="playSound('sound4')">THX</button>
+                <button class="button" onclick="playSound('sound5')">Outro song</button>
+                <button class="button" onclick="playSound('sound6')">Metal pipe</button>
+                <button class="button" onclick="playSound('sound7')">NFL bass bost</button>
+                <button class="button" onclick="playSound('sound8')">Bru</button>
+                <button class="button" onclick="playSound('sound9')">bomb has been planted</button>
+                <button class="button" onclick="playSound('sound10')">chamoy</button>
+                <button class="button" onclick="playSound('sound11')">bombaclat</button>
+                <button class="button" onclick="playSound('sound12')">and his name is john cena</button>
+                <button class="button" onclick="playSound('sound13')">bye bye mewing</button>
+                <button class="button" onclick="playSound('sound14')">sigma</button>
+                <button class="button" onclick="playSound('sound15')">you are my sunshine</button>
+                <button class="button" onclick="playSound('sound16')">john cena bing chiling</button>
+                <button class="button" onclick="playSound('sound17')">roblox bye</button>
+                <button class="button" onclick="playSound('sound18')">angry roblox</button>
+                <button class="button" onclick="playSound('sound19')">clash royale hog rider</button>
+                <button class="button" onclick="playSound('sound20')">taco bell bong sfx</button>
+                <button class="button" onclick="playSound('sound21')">treatme like white tee</button>
+                <button class="button" onclick="playSound('sound22')">broken table</button>
+                <button class="button" onclick="playSound('sound23')">silence I kill you</button>
+                <button class="button" onclick="playSound('sound24')">skibidi toilet</button>
+                <button class="button" onclick="playSound('sound25')">baby screaming</button>
+                <button class="button" onclick="playSound('sound26')">goofy ahh sounds</button>
+                <button class="button" onclick="playSound('sound27')">quandale dingle escapes</button>
+                <button class="button" onclick="playSound('sound28')">yessir</button>
+                <button class="button" onclick="playSound('sound29')">lebron-james</button>
+                <button class="button" onclick="playSound('sound30')">sketch whats up brother</button>
+                <button class="button" onclick="playSound('sound31')">slap ahhhh</button>
+                <button class="button" onclick="playSound('sound32')">roblox eating</button>
+                <button class="button" onclick="playSound('sound33')">fart reverb</button>
+                <button class="button" onclick="playSound('sound34')">fart</button>
+                <button class="button" onclick="playSound('sound35')">do you like jazz</button>
+                <button class="button" onclick="playSound('sound36')">mario is screaming</button>
+                <button class="button" onclick="playSound('sound37')">root beer no</button>
+                <button class="button" onclick="playSound('sound38')">spinning chip</button>
+                <button class="button" onclick="playSound('sound39')">grilled cheese obama sandwich</button>
+                <button class="button" onclick="playSound('sound40')">josh hutcherson whistle</button>
+                <button class="button" onclick="playSound('sound41')">pikmin</button>
+                <button class="button" onclick="playSound('sound42')">erm what the sigma</button>
+                <button class="button" onclick="playSound('sound43')">musica elevador</button>
+                <button class="button" onclick="playSound('sound44')">yee</button>
+                <button class="button" onclick="playSound('sound45')">dd hit em with a scream</button>
+                <button class="button" onclick="playSound('sound46')">epic</button>
+                <button class="button" onclick="playSound('sound47')">old spice whistle</button>
+                <button class="button" onclick="playSound('sound48')">the one piece is real</button>
+                <button class="button" onclick="playSound('sound49')">bonk</button>
+                <button class="button" onclick="playSound('sound50')">fortnite death</button>
+                <button class="button" onclick="playSound('sound51')">chipi chipi chapa chapa</button>
+                <button class="button" onclick="playSound('sound52')">pluh</button>
+                <button class="button" onclick="playSound('sound53')">travisscott yea</button>
+                <button class="button" onclick="playSound('sound54')">emotional damage meme</button>
+                <button class="button" onclick="playSound('sound55')">everybody was kungfu fighting</button>
+                <button class="button" onclick="playSound('sound56')"></button>
+                <button class="button" onclick="playSound('sound57')"></button>
+                <button class="button" onclick="playSound('sound58')"></button>
+                <button class="button" onclick="playSound('sound59')"></button>
+                <button class="button" onclick="playSound('sound60')"></button>
+                <button class="button" onclick="playSound('sound61')"></button>
+            </div>
+            <button class="button" onclick="spamAllSounds()">Spam All Sounds</button>
+            <audio id="sound1" src="http://sites.oyosite.com/soundboard/vine-boom.mp3"></audio>
+            <audio id="sound2" src="http://sites.oyosite.com/soundboard/chinese-rap-song.mp3"></audio>
+            <audio id="sound3" src="http://sites.oyosite.com/soundboard/yo-phone-linging_cajswid.mp3"></audio>
+            <audio id="sound4" src="http://sites.oyosite.com/soundboard/thx.mp3"></audio>
+            <audio id="sound5" src="http://sites.oyosite.com/soundboard/outro-song_oqu8zag.mp3"></audio>
+            <audio id="sound6" src="http://sites.oyosite.com/soundboard/metal-pipe-clang.mp3"></audio>
+            <audio id="sound7" src="http://sites.oyosite.com/soundboard/nfl.mp3"></audio>
+            <audio id="sound8" src="http://sites.oyosite.com/soundboard/movie_1.mp3"></audio>
+            <audio id="sound9" src="http://sites.oyosite.com/soundboard/bomb-has-been-planted-sound-effect-cs-go.mp3"></audio>
+            <audio id="sound10" src="http://sites.oyosite.com/soundboard/chamoy.mp3"></audio>
+            <audio id="sound11" src="http://sites.oyosite.com/soundboard/bombaclat.mp3"></audio>
+            <audio id="sound12" src="http://sites.oyosite.com/soundboard/and-his-name-is-john-cena-1.mp3"></audio>
+            <audio id="sound13" src="http://sites.oyosite.com/soundboard/bye-bye-mewing_fmvssqz.mp3"></audio>
+            <audio id="sound14" src="http://sites.oyosite.com/soundboard/sigma.mp3"></audio>
+            <audio id="sound15" src="http://sites.oyosite.com/soundboard/you-are-my-sunshine-lebron-james.mp3"></audio>
+            <audio id="sound16" src="http://sites.oyosite.com/soundboard/john-cena-bing-chiling.mp3"></audio>
+            <audio id="sound17" src="http://sites.oyosite.com/soundboard/roblox-bye.mp3"></audio>
+            <audio id="sound18" src="http://sites.oyosite.com/soundboard/angry-roblox.mp3"></audio>
+            <audio id="sound19" src="http://sites.oyosite.com/soundboard/clash-royale-hog-rider.mp3"></audio>
+            <audio id="sound20" src="http://sites.oyosite.com/soundboard/taco-bell-bong-sfx.mp3"></audio>
+            <audio id="sound21" src="http://sites.oyosite.com/soundboard/treat-me-like-white-tee.mp3"></audio>
+            <audio id="sound22" src="http://sites.oyosite.com/soundboard/broken-table_xzpf2zs.mp3"></audio>
+            <audio id="sound23" src="http://sites.oyosite.com/soundboard/ahmed-the-dead-terrorist-silence-i-kill-you_.mp3"></audio>
+            <audio id="sound24" src="http://sites.oyosite.com/soundboard/skibidi-toilet.mp3"></audio>
+            <audio id="sound25" src="http://sites.oyosite.com/soundboard/baby-screaming.mp3"></audio>
+            <audio id="sound26" src="http://sites.oyosite.com/soundboard/goofy-ahh-sounds.mp3"></audio>
+            <audio id="sound27" src="http://sites.oyosite.com/soundboard/quandale-dingle-escapes.mp3"></audio>
+            <audio id="sound28" src="http://sites.oyosite.com/soundboard/yessir-sound-effect_u1r61ba.mp3"></audio>
+            <audio id="sound29" src="http://sites.oyosite.com/soundboard/lebron-james.mp3"></audio>
+            <audio id="sound30" src="http://sites.oyosite.com/soundboard/sketch-whats-up-brother.mp3"></audio>
+            <audio id="sound31" src="http://sites.oyosite.com/soundboard/slap-ahhhh.mp3"></audio>
+            <audio id="sound32" src="http://sites.oyosite.com/soundboard/roblox-eating-nom-nom-nom.mp3"></audio>
+            <audio id="sound33" src="http://sites.oyosite.com/soundboard/fart-with-reverb_ncgstsa.mp3"></audio>
+            <audio id="sound34" src="http://sites.oyosite.com/soundboard/dry-fart.mp3"></audio>
+            <audio id="sound35" src="http://sites.oyosite.com/soundboard/do-you-like-jazz_ixlo4w6.mp3"></audio>
+            <audio id="sound36" src="http://sites.oyosite.com/soundboard/mario-is-screaming-the-chill-elevator-2-roblox-4.mp3"></audio>
+            <audio id="sound37" src="http://sites.oyosite.com/soundboard/root-beer-no.mp3"></audio>
+            <audio id="sound38" src="http://sites.oyosite.com/soundboard/spinning-chip-meme_v0ydkbu.mp3"></audio>
+            <audio id="sound39" src="http://sites.oyosite.com/soundboard/grilled-cheese-obama-sandwich.mp3"></audio>
+            <audio id="sound40" src="http://sites.oyosite.com/soundboard/josh-hutcherson-whistle.mp3"></audio>
+            <audio id="sound41" src="http://sites.oyosite.com/soundboard/pikmin-gcn+%281%29.mp3"></audio>
+            <audio id="sound42" src="http://sites.oyosite.com/soundboard/erm-what-the-sigma_su7gnzc.mp3erm what the sigma"></audio>
+            <audio id="sound43" src="http://sites.oyosite.com/soundboard/musica-elevador-short.mp3"></audio>
+            <audio id="sound44" src="http://sites.oyosite.com/soundboard/yee.mp3"></audio>
+            <audio id="sound45" src="http://sites.oyosite.com/soundboard/untitled_17.mp3"></audio>
+            <audio id="sound46" src="http://sites.oyosite.com/soundboard/sound3.mp3"></audio>
+            <audio id="sound47" src="http://sites.oyosite.com/soundboard/old-spice-whistle-hq.mp3"></audio>
+            <audio id="sound48" src="http://sites.oyosite.com/soundboard/the-one-piece-is-real.mp3"></audio>
+            <audio id="sound49" src="http://sites.oyosite.com/soundboard/bonk_betim8g.mp3"></audio>
+            <audio id="sound5o" src="http://sites.oyosite.com/soundboard/tmp_7901-951678082.mp3"></audio>
+            <audio id="sound51" src="http://sites.oyosite.com/soundboard/chipi-chipi-chapa-chapa.mp3"></audio>
+            <audio id="sound52" src="http://sites.oyosite.com/soundboard/pluh.mp3"></audio>
+            <audio id="sound53" src="http://sites.oyosite.com/soundboard/travisscott-yea.mp3"></audio>
+            <audio id="sound54" src="http://sites.oyosite.com/soundboard/emotional-damage-meme.mp3"></audio>
+            <audio id="sound55" src="http://sites.oyosite.com/soundboard/everybody-was-kungfu-fighting.mp3"></audio>
+            <audio id="sound56" src="http://sites.oyosite.com/soundboard/sound3.mp3"></audio>
+            <audio id="sound57" src="http://sites.oyosite.com/soundboard/sound3.mp3"></audio>
+            <audio id="sound58" src="http://sites.oyosite.com/soundboard/sound3.mp3"></audio>
+        </center>
+        <script>
+            function playSound(id) {
+                var sound = new Audio(document.getElementById(id).src);
+                sound.play();
+            }
+
+            function filterSounds() {
+                var input, filter, buttons, button, txtValue;
+                input = document.getElementById('searchInput');
+                filter = input.value.toUpperCase();
+                buttons = document.getElementsByClassName('button');
+
+                for (var i = 0; i < buttons.length; i++) {
+                    button = buttons[i];
+                    txtValue = button.textContent || button.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        button.style.display = '';
+                    } else {
+                        button.style.display = 'none';
+                    }
+                }
+            }
+
+            function spamAllSounds() {
+                var buttons = document.querySelectorAll('#soundButtons button');
+                buttons.forEach(function (button) {
+                    button.click();
+                });
+            }
+        </script>
+    </main>
+</body>
+
+</html>
