@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <meta http-equiv="refresh" content="3600">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+    <style>
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        ul.menu li {
+            float: left;
+            width: 50%;
+            text-align: center;
+        }
+
+        ul.menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 0;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        ul.menu li a:hover {
+            background-color: #111;
+        }
+
+        body {
+            padding-top: 40px;
+            background-color: #00D1FF;
+            margin: 0;
+        }
+
+        h1 {
+            color: blue;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h2 {
+            color: #f58516;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h3 {
+            color: #f5e216;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            padding-left: 20px;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.gifer.com/embedded/download/Xuhi.gif');
+            background-size: 640px 360px;
+            background-repeat: repeat;
+        }
+
+        .countdown {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 50px;
+            color: yellow;
+        }
+
+        #player-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .player {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .player img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20%;
+            margin-bottom: 0;
+        }
+
+        .player h2 {
+            font-size: 48px;
+            margin-top: 10px;
+        }
+
+        .player audio {
+            width: 300px;
+            margin-top: 0;
+        }
+
+        #search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #search-input {
+            width: 300px;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px 0 0 5px;
+            border: none;
+        }
+
+        #search-button {
+            padding: 8px 16px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li><a href="man.html">Games</a></li>
+        <li><a href="wordle.html">Wordle</a></li>
+    </ul>
+
+    <center>
+        <h1>Welcome to sites.com the unbanable website</h1>
+        <h3>welcome to catufy the best music player at school</h3>
+
+
+        <div class="countdown" id="countdown"></div>
+
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Enter song title...">
+            <button id="search-button" onclick="searchSong()">Search</button>
+        </div>
+
+        <a href="https://forms.gle/eZymeZmye5UYKiZaA" target="_blank">
+            <img src="https://sites.oyosite.com/images/click+me+for+song+requests.png" width="600" height="111"
+                style="">
+        </a>
+        <a href="https://docs.google.com/forms/d/1FhwkL_ts3wES1sO3oulORcLGovxbHep0Vik4Rz4mIcE/edit" target="_blank">
+            <img src="https://sites.oyosite.com/images/green+and+brown+simple+welcome+new+student+classroom+baner.png"
+                class="rounded-image" alt="Curved Image">
+        </a>
+
+        <div>
+
+            <div id="player-container">
+                <div class="player">
+                    <img src="https://sites.oyosite.com/images/tom.png" alt="Music Cover Image">
+                    <h2>Take on Me</h2>
+                    <audio controls>
+                        <source src="http://sites.oyosite.com/mp3/a-ha-takeonme.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="player">
+                    <img src="https://sites.oyosite.com/images/supersmash.png" alt="Music Cover Image">
+                    <h2>super smash bros menu</h2>
+                    <audio controls>
+                        <source src="http://sites.oyosite.com/mp3/smashultimate.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="player">
+                    <img src="https://sites.oyosite.com/images/download.jpeg" alt="Music Cover Image">
+                    <h2>never gonna give you up </h2>
+                    <audio controls>
+                        <source src="http://sites.oyosite.com/mp3/zamona-net-rick-astley-never-gonna-give-you-up.mp3"
+                            type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+            </div>
+
+            <div id="player-container">
+                <div class="player">
+                    <img src="https://sites.oyosite.com/images/images.png" alt="Music Cover Image">
+                    <h2>dream</h2>
+                    <audio controls>
+                        <source src="http://sites.oyosite.com/mp3/dream+speedrun+music+sound+effect.mp3"
+                            type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="player">
+                    <img src="https://sites.oyosite.com/images/jaksin.jpeg" alt="Music Cover Image">
+                    <h2>just beat it</h2>
+                    <audio controls>
+                        <source src="http://sites.oyosite.com/mp3/beat+it+-+michael+jackson.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="player">
+                    <img src="https://sites.oyosite.com/images/sddefault.jpg" alt="Music Cover Image">
+                    <h2>Andrew tate song</h2>
+                    <audio controls>
+                        <source src="https://sites.oyosite.com/mp3/andrew+tates+theme+song+by+dj+lunatique.mp3"
+                            type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="player-container">
+            <div class="player">
+                <img src="https://sites.oyosite.com/images/r-5197542-1387192041-4950.jpg" alt="Music Cover Image">
+                <h2>All I Want For Christmas</h2>
+                <audio controls>
+                    <source src="/mp3/mariah+carey+-+all+i+want+for+christmas+is+you.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="player">
+                <img src="https://sites.oyosite.com/images/no_imige.png" alt="Music Cover Image">
+                <h2>no song</h2>
+                <audio controls>
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="player">
+                <img src="https://sites.oyosite.com/images/no_imige.png" alt="Music Cover Image">
+                <h2>no song</h2>
+                <audio controls>
+                    <source src="your-song3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <div id="player-container">
+            <div class="player">
+                <img src="https://sites.oyosite.com/images/no_imige.png" alt="Music Cover Image">
+                <h2>no song</h2>
+                <audio controls>
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="player">
+                <img src="https://sites.oyosite.com/images/no_imige.png" alt="Music Cover Image">
+                <h2>no song</h2>
+                <audio controls>
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="player">
+                <img src="https://sites.oyosite.com/images/no_imige.png" alt="Music Cover Image">
+                <h2>no song</h2>
+                <audio controls>
+                    <source src="your-song3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        <div id="player-container">
+            <div class="player">
+                <img src="https://sites.oyosite.com/images/no_imige.png" alt="Music Cover Image">
+                <h2>no song</h2>
+                <audio controls>
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="player">
+                <img src="https://sites.oyosite.com/images/no_imige.png" alt="Music Cover Image">
+                <h2>no song</h2>
+                <audio controls>
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="player">
+                <img src="https://sites.oyosite.com/images/no_imige.png" alt="Music Cover Image">
+                <h2>no song</h2>
+                <audio controls>
+                    <source src="your-song3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        <div id="player-container">
+            <div class="player">
+                <img src="https://sites.oyosite.com/images/no_imige.png" alt="Music Cover Image">
+                <h2>no song</h2>
+                <audio controls>
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="player">
+                <img src="https://sites.oyosite.com/images/no_imige.png" alt="Music Cover Image">
+                <h2>no song</h2>
+                <audio controls>
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="player">
+                <img src="https://sites.oyosite.com/images/no_imige.png" alt="Music Cover Image">
+                <h2>no song</h2>
+                <audio controls>
+                    <source src="your-song3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+
+    </center>
+</body>
+
+</html>
