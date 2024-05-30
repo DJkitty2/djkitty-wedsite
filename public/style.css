@@ -63,8 +63,6 @@ h1 {
 h2 {
   color: #f58516;
   font-family: "Open Sans", sans-serif;
-  mix-blend-mode: sub;
-  mix-blend-mode: plus-lighter;
 }
 
 h3 {
