@@ -83,7 +83,13 @@ font-family: 'Open Sans', sans-serif;
 font-size: 22px;       
 padding: 0px;
 }
-
+h6 {
+    color: rgb(255, 166, 0);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;       
+    padding: 0px;
+    }
+    
 .banner {
     background-color: rgba(245, 226, 22, 0.8); /* Use rgba() for semi-transparent color */
     color: #fff;
